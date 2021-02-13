@@ -1,0 +1,47 @@
+<!-- 
+I created a single page website using HTML, Bootstrap, and JavaScript that contains the following:
+a.	A Bootstrap styled table representing a list of email subscribers.
+b.	A Bootstrap styled form that allows a user to add a new row to the table when submitted.
+ -->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body>
+
+        <!-- The Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <span class="navbar-brand">Newsletter Subscribers</span>
+        </nav>
+
+        <!-- The table of subscribers -->
+        <div class="container-fluid">
+            <table id="table" class="table table-dark table-striped">
+                <thead class="thead-dark"></thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email Address</th>
+                    </tr>
+                </thead>
+            </table>
+
+            <!-- The form for subscribing -->
+            <form class="form-row">
+                <label class="col-sm-1 m-1 col-form-label">Subscribe</label>
+                <input id="first" class="col-sm-2 m-1 form-control" id="inputFirstName" aria-describedby="name" placeholder="Enter First Name">
+                <input id="last" class="col-sm-3 m-1 form-control" id="inputLastName" aria-describedby="name" placeholder="Enter Last Name">
+                <input id="email" class="col-sm-3 m-1 form-control" type="email" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+                <button id="submit" class="col-sm-2 m-1" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
